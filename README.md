@@ -78,7 +78,8 @@ mvn exec:java -Dexec.mainClass="Principal"
 
 ## Fluxograma de Execucao do Codigo
 
-``
+
+```text
        +------------------------------------+
        |       Inicio (Principal.java)      |
        +------------------------------------+
