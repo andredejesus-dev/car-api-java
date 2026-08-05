@@ -1,12 +1,12 @@
-<div align="center">
+Markdown<div align="center">
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST)
+![Titulo Animado](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST)
 
 Aplicacao desktop desenvolvida em Java 24 para consulta dinamica de valores de veiculos em tempo real utilizando a API REST Parallelum FIPE.
 
-![](https://img.shields.io/badge/Java-24-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![](https://img.shields.io/badge/GUI-Java%20Swing-blue?style=for-the-badge)
-![](https://img.shields.io/badge/API-Parallelum%20FIPE-green?style=for-the-badge)
+![Java 24](https://img.shields.io/badge/Java-24-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Java Swing](https://img.shields.io/badge/GUI-Java%20Swing-blue?style=for-the-badge)
+![API FIPE](https://img.shields.io/badge/API-Parallelum%20FIPE-green?style=for-the-badge)
 
 </div>
 
@@ -29,8 +29,7 @@ graph TD
     E -->|5. Preenche Combo de Anos| F[Aguardando Clique]
     F -->|6. Clique em Buscar Preco| G[HTTP GET /marcas/ID/modelos/ID/anos/ID]
     G -->|7. Retorno do JSON| H[Exibe Resultado Formatado no JTextArea]
-    Tecnologias UtilizadasComponenteTecnologiaFuncaoLinguagemJava 24Versao principal de desenvolvimentoInterface GraficaJava Swing / AWTLayout e componentes (GridBagLayout, JComboBox, JTextArea)Cliente HTTPjava.net.http.HttpClientRequisicoes REST HTTP nativasProcessamento JSONorg.jsonParsing de respostas JSON da APIGerenciador de BuildApache MavenGerenciamento do ciclo de vida e dependencias
-    car-api-java/
+Tecnologias UtilizadasComponenteTecnologiaFuncaoLinguagemJava 24Versao principal de desenvolvimentoInterface GraficaJava Swing / AWTLayout e componentes (GridBagLayout, JComboBox, JTextArea)Cliente HTTPjava.net.http.HttpClientRequisicoes REST HTTP nativasProcessamento JSONorg.jsonParsing de respostas JSON da APIGerenciador de BuildApache MavenGerenciamento do ciclo de vida e dependenciasEstrutura do RepositorioPlaintextcar-api-java/
 ├── src/
 │   └── main/
 │       └── java/
@@ -39,25 +38,7 @@ graph TD
 ├── .gitignore
 ├── pom.xml                            # Configuracoes de dependencias Maven
 └── README.md                          # Documentacao do projeto
-Como Executar o Projeto
-Pre-requisitos
-JDK 24 instalado.
-
-Maven instalado e configurado nas variaveis de ambiente.
-
-Passo a Passo
-Clone o repositorio:
-
-Bash
-git clone [https://github.com/andredejesus-dev/car-api-java.git](https://github.com/andredejesus-dev/car-api-java.git)
+Como Executar o ProjetoPre-requisitosJDK 24 instalado.Maven instalado e configurado nas variaveis de ambiente.Passo a PassoClone o repositorio:Bashgit clone [https://github.com/andredejesus-dev/car-api-java.git](https://github.com/andredejesus-dev/car-api-java.git)
 cd car-api-java
-Compile o projeto e baixe as dependencias necessarias via Maven:
-
-Bash
-mvn clean compile
-Execute a aplicacao:
-
-Bash
-mvn exec:java -Dexec.mainClass="Principal"
-
-4. Clique no botão verde **Commit changes...** para salvar.
+Compile o projeto e baixe as dependencias necessarias via Maven:Bashmvn clean compile
+Execute a aplicacao:Bashmvn exec:java -Dexec.mainClass="Principal"
