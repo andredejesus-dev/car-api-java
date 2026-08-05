@@ -1,4 +1,4 @@
-Markdown<div align="center">
+<div align="center">
 
 ![Titulo Animado](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST)
 
@@ -20,16 +20,30 @@ O projeto consiste em uma interface grafica interativa construida com **Java Swi
 
 ## Fluxo de Integracao da API
 
-```mermaid
-graph TD
-    A[Inicio: Execucao da Interface] -->|1. HTTP GET /marcas| B[Preenche Combo de Marcas]
-    B -->|2. Evento: Selecao de Marca| C[HTTP GET /marcas/ID/modelos]
-    C -->|3. Preenche Combo de Modelos| D[Aguardando Acao]
-    D -->|4. Evento: Selecao de Modelo| E[HTTP GET /marcas/ID/modelos/ID/anos]
-    E -->|5. Preenche Combo de Anos| F[Aguardando Clique]
-    F -->|6. Clique em Buscar Preco| G[HTTP GET /marcas/ID/modelos/ID/anos/ID]
-    G -->|7. Retorno do JSON| H[Exibe Resultado Formatado no JTextArea]
-Tecnologias UtilizadasComponenteTecnologiaFuncaoLinguagemJava 24Versao principal de desenvolvimentoInterface GraficaJava Swing / AWTLayout e componentes (GridBagLayout, JComboBox, JTextArea)Cliente HTTPjava.net.http.HttpClientRequisicoes REST HTTP nativasProcessamento JSONorg.jsonParsing de respostas JSON da APIGerenciador de BuildApache MavenGerenciamento do ciclo de vida e dependenciasEstrutura do RepositorioPlaintextcar-api-java/
+1. **Execucao da Interface:** Envia `HTTP GET /marcas` e preenche o combo de marcas.
+2. **Selecao de Marca:** Envia `HTTP GET /marcas/{ID}/modelos` e atualiza o combo de modelos.
+3. **Selecao de Modelo:** Envia `HTTP GET /marcas/{ID}/modelos/{ID}/anos` e atualiza o combo de anos.
+4. **Clique em Buscar Preco:** Envia `HTTP GET /marcas/{ID}/modelos/{ID}/anos/{ID}`.
+5. **Exibicao:** Faz o parsing do JSON retornado e exibe o valor final no painel.
+
+---
+
+## Tecnologias Utilizadas
+
+| Componente | Tecnologia | Funcao |
+| :--- | :--- | :--- |
+| **Linguagem** | Java 24 | Versao principal de desenvolvimento |
+| **Interface Grafica** | Java Swing / AWT | Layout e componentes (`GridBagLayout`, `JComboBox`, `JTextArea`) |
+| **Cliente HTTP** | `java.net.http.HttpClient` | Requisicoes REST HTTP nativas |
+| **Processamento JSON** | `org.json` | Parsing de respostas JSON da API |
+| **Gerenciador de Build** | Apache Maven | Gerenciamento do ciclo de vida e dependencias |
+
+---
+
+## Estrutura do Repositorio
+
+```text
+car-api-java/
 ├── src/
 │   └── main/
 │       └── java/
@@ -38,7 +52,3 @@ Tecnologias UtilizadasComponenteTecnologiaFuncaoLinguagemJava 24Versao principal
 ├── .gitignore
 ├── pom.xml                            # Configuracoes de dependencias Maven
 └── README.md                          # Documentacao do projeto
-Como Executar o ProjetoPre-requisitosJDK 24 instalado.Maven instalado e configurado nas variaveis de ambiente.Passo a PassoClone o repositorio:Bashgit clone [https://github.com/andredejesus-dev/car-api-java.git](https://github.com/andredejesus-dev/car-api-java.git)
-cd car-api-java
-Compile o projeto e baixe as dependencias necessarias via Maven:Bashmvn clean compile
-Execute a aplicacao:Bashmvn exec:java -Dexec.mainClass="Principal"
