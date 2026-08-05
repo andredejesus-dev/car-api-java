@@ -50,20 +50,27 @@ car-api-java/
 │           ├── InterfaceCarros.java   # Construcao da GUI e logica das chamadas HTTP
 │           └── Principal.java         # Ponto de entrada (Main) com SwingUtilities
 ├── .gitignore
-
 ├── pom.xml                            # Configuracoes de dependencias Maven
-└── README.md                          # Documentacao do projeto
+└── README.md                        # Documentacao do projeto
+```
 
-## Como Executar o Projeto
+Pre-requisitos
+JDK 24 instalado.
 
-### Pre-requisitos
-- **JDK 24** instalado.
-- **Maven** instalado e configurado nas variaveis de ambiente.
+Maven instalado e configurado nas variaveis de ambiente.
 
-### Passo a Passo
+##Passo a Passo para Executar
+---
+Clone o repositorio:
 
-1. Clone o repositorio:
-```bash
-git clone [https://github.com/andredejesus-dev/car-api-java.git](https://github.com/andredejesus-dev/car-api-java.git)
+Bash
+git clone https://github.com/andredejesus-dev/car-api-java.git
 cd car-api-java
+Compile o projeto e baixe as dependencias necessarias via Maven:
 
+Bash
+mvn clean compile
+Execute a aplicacao:
+
+Bash
+mvn exec:java -Dexec.mainClass="Principal"
