@@ -74,3 +74,51 @@ Execute a aplicacao:
 
 Bash
 mvn exec:java -Dexec.mainClass="Principal"
+---
+
+## Fluxograma de Execucao do Codigo
+
+``
+       +------------------------------------+
+       |       Inicio (Principal.java)      |
+       +------------------------------------+
+                         |
+                         v
+       +------------------------------------+
+       |   SwingUtilities.invokeLater()     |
+       |  (Inicializa GUI InterfaceCarros)  |
+       +------------------------------------+
+                         |
+                         v
+       +------------------------------------+
+       |        HTTP GET /marcas            |
+       |    (Preenche Combo de Marcas)      |
+       +------------------------------------+
+                         |
+                         v
+       +------------------------------------+
+       |   Aguardando Interacao do Usuario  |
+       +------------------------------------+
+          /              |              \
+         /               |               \
+   Alterou Marca   Alterou Modelo    Clicou Buscar
+        /                |                 \
+       v                 v                  v
++--------------+  +--------------+  +---------------+
+|   HTTP GET   |  |   HTTP GET   |  |   HTTP GET    |
+|   /modelos   |  |    /anos     |  | /veiculo_info |
++--------------+  +--------------+  +---------------+
+       |                 |                  |
+       v                 v                  v
++--------------+  +--------------+  +---------------+
+|   Preenche   |  |   Preenche   |  |  Parse JSON   |
+| Combo Modelo |  |  Combo Anos  |  |   e Exibicao  |
++--------------+  +--------------+  +---------------+
+       \                 |                 /
+        \                |                /
+         +---------------+---------------+
+                         |
+                         v
+       +------------------------------------+
+       |    Retorna ao Estado de Espera     |
+       +------------------------------------+
