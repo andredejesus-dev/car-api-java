@@ -1,16 +1,12 @@
-Markdown<div align="center">
+O erro ocorre porque faltou uma linha em branco obrigatória após o fechamento das três crases (```) do bloco Mermaid e a tabela de tecnologias. Sem essa quebra de linha, o GitHub entende a palavra Tecnologias como parte da sintaxe do diagrama.Também simplifiquei a tag da imagem do título animado usando Markdown limpo (![Typing SVG](...)) para o GitHub carregar a imagem sem falhas.Clique no ícone do lápis para editar o arquivo README.md, substitua todo o texto pelo código abaixo e salve:Markdown<div align="center">
 
-<!-- TITULO ANIMADO VIA TYPING SVG -->
-<a href="[https://git.io/typing-svg](https://git.io/typing-svg)">
-  <img src="[https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST)" alt="Typing SVG" />
-</a>
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST)
 
-<p>Aplicacao desktop desenvolvida em Java 24 para consulta dinamica de valores de veiculos em tempo real utilizando a API REST Parallelum FIPE.</p>
+Aplicacao desktop desenvolvida em Java 24 para consulta dinamica de valores de veiculos em tempo real utilizando a API REST Parallelum FIPE.
 
-<!-- BADGES INTERATIVOS -->
 ![](https://img.shields.io/badge/Java-24-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![](https://img.shields.io/badge/GUI-Java%20Swing-blue?style=for-the-badge)
-![](https://img.shields.io/badge/API-Parallelum%20FIPE-green?style=for-the-badge)
+![]([https://img.shields.io/badge/API-Parallelum%20FIPE-green?style=for-the-badge](https://img.shields.io/badge/API-Parallelum%20FIPE-green?style=for-the-badge))
 
 </div>
 
