@@ -1,8 +1,8 @@
 Markdown<div align="center">
 
-<!-- TITULO ANIMADO VIA TYPING SVG (RODA NATIVO NO GITHUB) -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=28&pause=1000&color=0969DA&center=true&vCenter=true&width=600&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST" alt="Typing SVG" />
+<!-- TITULO ANIMADO VIA TYPING SVG -->
+<a href="[https://git.io/typing-svg](https://git.io/typing-svg)">
+  <img src="[https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=26&pause=1000&color=0969DA&center=true&vCenter=true&width=700&height=50&lines=CONSULTA+TABELA+FIPE+-+JAVA+24;JAVA+SWING+%2B+API+REST)" alt="Typing SVG" />
 </a>
 
 <p>Aplicacao desktop desenvolvida em Java 24 para consulta dinamica de valores de veiculos em tempo real utilizando a API REST Parallelum FIPE.</p>
@@ -42,7 +42,7 @@ Tecnologias UtilizadasComponenteTecnologiaFuncaoLinguagemJava 24Versao principal
 ├── .gitignore
 ├── pom.xml                            # Configuracoes de dependencias Maven
 └── README.md                          # Documentacao do projeto
-Como Executar o ProjetoPre-requisitosJDK 24 instalado.Maven instalado e configurado nas variaveis de ambiente.Passo a PassoClone o repositorio:Bashgit clone [https://github.com/andredejesus-dev/car-api-java.git](https://github.com/andredejesus-dev/car-api-java.git)
+Como Executar o ProjetoPre-requisitosJDK 24 instalado.Maven instalado e configurado nas variaveis de ambiente.Passo a PassoClone o repositorio:Bashgit clone https://github.com/andredejesus-dev/car-api-java.git
 cd car-api-java
 Compile o projeto e baixe as dependencias necessarias via Maven:Bashmvn clean compile
 Execute a aplicacao:Bashmvn exec:java -Dexec.mainClass="Principal"
